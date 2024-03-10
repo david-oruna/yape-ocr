@@ -11,6 +11,7 @@ This project utilizes Pytesseract OCR to extract information from screenshots re
   - **images/:** Images for documentation.
   - **requirements.md:** Project requirements.
   - **design.md:** Design and architecture documentation.
+- **samples/:** Some Tests 
 - **src/:** Source code.
   - **ocr_project/:** Main project code.
     - **utils/:** Utility functions.
