@@ -1,42 +1,17 @@
-# OCR Project for Yape and Plin Screenshots
+# Yape & Plin OCR Processing 💸
 
-## Overview
+Extracts transaction details from Yape and Plin screenshots and exports them to a CSV file using Tesseract OCR.
 
-This project utilizes Pytesseract OCR to extract information from screenshots related to Yape and Plin. The extracted data includes name, amount, date, time, and destination.
+## Requirements
 
-## Project Structure
+- Python 3.9+
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) installed at `C:\Program Files\Tesseract-OCR\tesseract.exe` or specify a custom path.
 
-- **data/:** Directory to store sample data or any necessary data.
-- **docs/:** Documentation files.
-  - **images/:** Images for documentation.
-  - **requirements.md:** Project requirements.
-  - **design.md:** Design and architecture documentation.
-- **samples/:** Some Tests 
-- **src/:** Source code.
-  - **ocr_project/:** Main project code.
-    - **utils/:** Utility functions.
-    - **ocr_processor.py:** OCR processing module.
-  - **tests/:** Unit tests.
-  - **main.py:** Entry point for the application.
-- **.gitignore:** Git ignore file.
-- **LICENSE:** Project license.
-- **README.md:** Project readme file.
-- **requirements.txt:** Python dependencies.
-- **.git/:** Git configuration and data.
+## Setup
 
-## Usage
-
-1. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2. Run the main script:
-    ```bash
-    python src/main.py /path/to/image.jpg
-    ```
-
-## Contributing
-
-If you want to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
-
+```bash
+git clone https://github.com/david-oruna/yape-ocr.git
+cd yape-ocr
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
